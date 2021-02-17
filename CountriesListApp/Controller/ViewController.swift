@@ -8,8 +8,10 @@ import UIKit
 
 class ViewController: UITableViewController {
     
+    
     private var countries: [Country] = []
     private let cellID = "cell"
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +45,6 @@ class ViewController: UITableViewController {
         }
         
         navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor : UIColor.black]
-        
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor : UIColor.black]
         
         navigationController?.navigationBar.barTintColor = .white
@@ -112,6 +113,4 @@ extension ViewController{
             self.present(actionSheet, animated: true)
         }
     }
-    
-    
-}
+}//End

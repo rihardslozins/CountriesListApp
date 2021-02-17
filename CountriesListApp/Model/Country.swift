@@ -23,4 +23,4 @@ struct Country {
         guard let arrayOfItems = arrayOfItems as? Array<[String: Any]> else { return nil }
         return arrayOfItems.compactMap { Country(item: $0) }
     }
-}
+}//End
